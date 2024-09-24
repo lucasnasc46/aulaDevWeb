@@ -1,0 +1,216 @@
+body, hmtl{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: darkblue;
+    height: 100px;
+    
+}
+
+.menu{
+    list-style-type: none; /*remove os marcadores padroes da lista*/
+    padding: 0;
+    margin-left: 65%;
+    padding-top: 30px;
+    
+}
+
+.menu li{
+    display: inline; /*deixando os itens da lista na horizontal*/
+    margin-right: 20px;
+    font-size: 30px;
+   
+}
+
+a{
+    text-decoration: none;
+    color:aliceblue;
+    
+}
+
+a:hover{
+    color:aqua;
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    background-image: url('C:/Users/alt_f/OneDrive/Documents/Anhaguera/4 periodo/Programação Web/aulaDevWeb/src/public/img/laptop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+h1{
+
+    text-align: center;
+    color: aliceblue;
+    padding-top: 200px;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+#projetos{
+
+    text-align: center;
+    display: flex; /*layout flexivel para os eleemtnos*/
+    flex-wrap: nowrap; /*impede que os elementos quebrem em linhas*/
+    justify-content: flex-start; /*Alinhas os elementos a esquerda*/
+    
+  }
+
+.project{
+
+    text-align: center; /* Centralize o conteúdo do projeto horizontalmente */
+    margin-right: 20px; /* Adicione espaço entre os projetos */
+    
+}
+
+h3, a{
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sobre{
+
+    width: 675px;
+    height: 760px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 80px;
+
+}
+
+#sobremim{
+
+    background-color: darkslateblue;
+    color:aliceblue;
+    height: 860px;
+    text-align:center;
+    
+}
+
+.txtsobre{
+
+    font-size: 20px;
+    margin-left: 1px;
+    margin-right: 45px;
+   
+    
+}
+
+#iconinsta{
+    
+    width: 50px;
+    height: 50px;
+    display: inline-block; /* Faz com que a imagem seja exibida como um elemento em linha */
+    vertical-align: middle; /* Alinha verticalmente ao meio para alinhar a imagem e o texto */
+    margin-right: 10px;
+    
+}
+
+#insta{
+
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+table{
+
+    width: 75%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th{
+
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{
+
+    background-color: aqua;
+}
+
+#valores{
+    padding-bottom: 20px;
+}
+
+#contato{
+
+    background-image: url("C:/Users/alt_f/OneDrive/Documents/Anhaguera/4 periodo/Programação Web/aulaDevWeb/src/public/img/bgform.jpg");
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+.h2contato{
+
+    color: #ddd;
+    padding-top: 5px;
+}
+
+
+#divform{
+
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+#divform label{
+
+    display: block;
+    text-align: center;
+    font-size:18px;
+    color: #ccc;
+}
+
+#divform input[type="text"],
+#divform input[type="email"],
+#divform input[type="tel"] {
+  width: 75%; /* Define a largura dos inputs como 100% para ocupar toda a largura disponível */
+  padding: 10px; /* Adiciona espaço interno para melhorar a aparência dos inputs */
+  margin-bottom: 10px; /* Adiciona espaço entre os inputs (opcional) */
+}
+
+#divform button[type="submit"] {
+    background-color: #8400ff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 18px; /* Tamanho do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o botão */
+  }
+  
+  /* Estiliza o botão quando o mouse passa por cima */
+  #divform button[type="submit"]:hover {
+    background-color: #0098b3; /* Cor de fundo do botão ao passar o mouse */
+  }
+
+footer{
+
+    text-align: center;
+    margin: 0;
+}
+  
