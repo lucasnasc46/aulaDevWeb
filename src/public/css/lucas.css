@@ -1,4 +1,4 @@
-body, hmtl{
+body, html{
     margin: 0;
     padding: 0;
 }
@@ -37,18 +37,23 @@ a:hover{
 header{
     width: 100%;
     height: 500px;
-    background: rgba(255, 255, 255, 0.2);
-    background-image: url('C:/Users/alt_f/OneDrive/Documents/Anhaguera/4 periodo/Programação Web/aulaDevWeb/src/public/img/laptop.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('C:/Users/alt_f/OneDrive/Documents/Anhaguera/4 periodo/Programação Web/aulaDevWeb/src/public/img/laptop.jpg');
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   
 }
-h1{
-
-    text-align: center;
+h1, h4{
     color: aliceblue;
-    padding-top: 200px;
+    margin: 0;
+    padding: 5px 0;
+    padding-left: 250px;
     
 }
 
@@ -56,23 +61,35 @@ h2{
     text-align: center;
 }
 
-#projetos{
-
+#projetos {
     text-align: center;
-    display: flex; /*layout flexivel para os eleemtnos*/
-    flex-wrap: nowrap; /*impede que os elementos quebrem em linhas*/
-    justify-content: flex-start; /*Alinhas os elementos a esquerda*/
-    
-  }
-
-.project{
-
-    text-align: center; /* Centralize o conteúdo do projeto horizontalmente */
-    margin-right: 20px; /* Adicione espaço entre os projetos */
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os elementos quebrem em linhas */
+    justify-content: center; /* Distribui o espaço entre os elementos */
+    gap: 50px; /* Espaçamento entre os projetos */
+    padding: 0 90px;
+    margin: 0 auto;
     
 }
 
-h3, a{
+.projeto {
+    display: flex;
+    flex-direction: column; /* Coloca o título acima da imagem */
+    align-items: center; /* Centraliza o título e a imagem */
+    text-align: center;
+}
+
+.projeto img {
+    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+.projeto h3 {
+    margin-bottom: 10px; /* Espaçamento entre o título e a imagem */
+}
+
+
+a{
 
     display: inline-block;
     vertical-align: top;
