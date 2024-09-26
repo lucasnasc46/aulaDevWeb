@@ -7,7 +7,7 @@ body, html{
 }
 
 nav {
-    background-color: rgb(1, 1, 55);
+    background: linear-gradient(to right, rgb(39, 31, 91), rgb(1, 35, 109));
     height: 100px;
     margin: 0;
     display: flex; /* Ativa o flexbox */
@@ -63,7 +63,8 @@ h2{
     font-size: 30px;
 }
 
-#projetos {
+
+#projetos, #conhecimento {
     text-align: center;
     display: flex;
     flex-wrap: nowrap; /* Impede que os elementos quebrem em linhas */
@@ -79,16 +80,13 @@ a{
 }
 
 #sobremim{
-   
-    background-color: rgb(39, 31, 91);
+    background: linear-gradient(to right, rgb(39, 31, 91), rgb(1, 35, 109));
     color:aliceblue;
     text-align: center;
     justify-content: center;
     padding-bottom: 10px;
     margin-top: 10px;
     padding-top: 10px;
-    
-
 }
 
 #imgSobre{
@@ -114,19 +112,12 @@ a{
     max-width: 600px;
 }
 
-#iconinsta{
-    width: 50px;
-    height: 50px;
-    display: inline-block; /* Faz com que a imagem seja exibida como um elemento em linha */
-    vertical-align: middle; /* Alinha verticalmente ao meio para alinhar a imagem e o texto */
-    margin-right: 10px;
-    
-}
-
-#insta{
-
-    display: inline-block; 
-    vertical-align: middle;
+hr{
+    border: none;
+    height: 2px;
+    background-color: aqua;
+    margin: 45px auto;
+    width: 75%;
 }
 
 table{
