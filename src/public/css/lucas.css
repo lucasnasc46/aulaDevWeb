@@ -64,7 +64,7 @@ h2{
 }
 
 
-#projetos, #conhecimento {
+.projetos, #conhecimento {
     text-align: center;
     display: flex;
     flex-wrap: nowrap; /* Impede que os elementos quebrem em linhas */
@@ -120,33 +120,81 @@ hr{
     width: 75%;
 }
 
-table{
-
-    width: 75%;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-td, th{
-
+#valores {
+    font-family: 'Arial', sans-serif;
+    margin: 50px auto;
+    max-width: 800px;
     text-align: center;
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
 }
 
-tr:hover{
-
-    background-color: aqua;
+#valores h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-#valores{
-    padding-bottom: 20px;
+#valores table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+#valores th, #valores td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+#valores th {
+    background-color: rgb(39, 31, 91);
+    color: white;
+    font-weight: bold;
+}
+
+#valores td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#valores tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+#valores td:nth-child(1) {
+    background-color: #02d4ef;
+}
+
+#valores td:nth-child(2) {
+    background-color: #5aa1f7;
+}
+
+#valores td:nth-child(3) {
+    background-color: #ae78f1;
+    
+}
+
+#valores table, #valores th, #valores td {
+    border:none;
+}
+
+#valores table th, #valores table td {
+    text-align: center;
+}
+
+#valores td {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+#valores .preco:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 #contato{
-
-    background-image: url("C:/Users/alt_f/OneDrive/Documents/Anhaguera/4 periodo/Programação Web/aulaDevWeb/src/public/img/bgform.jpg");
+    background-image: linear-gradient(rgba(5, 0, 51, 0.744), rgba(49, 0, 95, 0.772)), 
+                      url('C:/Users/alt_f/OneDrive/Documents/Anhaguera/4 periodo/Programação Web/aulaDevWeb/src/public/img/bgtec.jpg');
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -155,15 +203,13 @@ tr:hover{
 }
 
 .h2contato{
-
     color: #ddd;
     padding-top: 5px;
 }
 
-
 #divform{
 
-    width: 300px;
+    width:500px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 auto;
@@ -206,9 +252,17 @@ tr:hover{
     background-color: #0098b3; /* Cor de fundo do botão ao passar o mouse */
   }
 
-footer{
-
+.rodape{
+    height: 60px;
     text-align: center;
     margin: 0;
+    background-color: rgb(0, 4, 40);
+}
+
+.rodape p{
+    margin: 0;
+    background-color:  rgb(0, 4, 40);
+    color: white;
+    font-size: smaller;
 }
   
